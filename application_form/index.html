@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+	
+		<title>Course Application</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div class = "container">
+			<header>
+				<h1> Course Application </h1>
+			</header>
+
+			<div class="main">
+				<form>
+					<fieldset>
+						<legend> Your Contact Info </legend>
+							<div class = "formRow">
+								<label for = "YourName"> Your Name </label>
+									<input type = "text" placeholder = "First" id = "YourName" autofocus>
+									<input type = "text" placeholder = "Last">
+							</div>
+
+							<div id = "clearfix"></div>
+
+							<div class = "formRow">
+								<label for = "phoneNumber"> Phone Number </label>
+									<input type = "tel" id = "phoneNumber" class = "inputSmall">
+									&mdash;
+									<input type = "tel" class = "inputSmall">
+									&mdash;
+									<input type = "tel" class = "inputSmall">
+							</div>
+
+							<div id = "clearfix"></div>
+
+							<div class = "formRow">
+								<label for = "address" class = "labelAddress"> Address </label>
+									<div class = "addressWrapper">
+										<input type = "text" placeholder = "Street Address" id = "address" class = "inputLarge">
+										<input type = "text" placeholder = "Address Line 2" class = "inputLarge">
+										<input type = "text" placeholder = "City" class = "inputMedium">
+										<input type = "text" placeholder = "State" class = "inputMedium">
+										<input type = "text" placeholder = "Postal Code" class = "inputMedium">
+									</div>
+							</div>
+					</fieldset>
+
+					<fieldset>
+						<legend> Skills &amp; Interests </legend>
+							<div class = "formRow">
+								<label for = "course"> Course </label>
+									<select id = "course">
+										<option selected = "selected"> Select One </option>
+
+										<optgroup label = "Web Development">
+											<option> Front-end </option>
+											<option> Back-end </option>
+										</optgroup>
+
+										<optgroup label = "Design">
+											<option> Visual Design </option>
+											<option> User Experience </option>
+										</optgroup>
+									</select>
+							</div>
+
+							<div id = "clearfix"></div>
+
+							<div class = "formRow">
+								<label for "pastExperience"> Past Experience </label>
+									<textarea id = "pastExperience" rows = "10"></textarea>
+							</div>
+
+							<div id = "clearfix"></div>
+					</fieldset>
+
+					<fieldset>
+						<legend> Anything Else? </legend>
+
+						<div class = "formRow">
+							<label for "referral"> Referral </label>
+								<select id = "referral">
+									<option selected = "selected"> None </option>
+									<option> Friend </option>
+									<option> Instructor </option>
+									<option> Online </option>
+								</select>
+						</div>
+
+						<div id = "clearfix"></div>
+
+						<div class = "formRow">
+							<label for = "comments"> Comments </label>
+								<textarea id = "comments" rows = "10"></textarea>
+						</div>
+
+						<div id = "clearfix"></div>
+					</fieldset>
+
+					<div class = "buttonsWrapper">
+						<button>Save Draft</button>
+						<button>Submit</button>
+					</div>
+				</form>
+			</div>
+		</div><!-- #container --> 
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+	</body>
+</html>

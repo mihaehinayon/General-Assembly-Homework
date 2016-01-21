@@ -1,0 +1,236 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     clear: both;
+     content: ".";
+     display: block;
+     height: 0;
+     line-height: 0;
+     visibility: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-family: Lato, Helvetica, sans-serif;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 1.4;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	margin: 50px auto;
+     width: 900px;
+}
+
+     header {
+          margin-bottom: 30px;
+     }
+
+     #main {
+          float: left;
+          width: 68%;
+     }
+
+     aside {
+          float: right;
+          margin-left: 5%;
+          width: 27%;
+     }
+
+          #asideTop {
+               border-bottom: 1px solid rgb(222, 222, 222);
+               padding-bottom: 20px;
+          }
+
+          #asideMiddle {
+               background-color: rgb(222, 222, 222);
+               border: 1px solid rgb(222, 222, 222);
+               height: 300px;
+               margin: 20px 0px;
+          }
+
+          #asideBottom {
+               border-top: 1px solid rgb(222, 222, 222);
+               padding-top: 20px;
+          }
+
+     footer {
+          clear: both;
+          margin-bottom: 30px;
+     }
+
+/******************************************
+/* GLOBAL STYLES                 
+/*******************************************/
+
+a {
+     color: rgb(243, 29, 29);
+     font-weight: 300;
+     text-decoration: none;
+}
+
+article {
+     border-bottom: 1px solid rgb(222, 222, 222);
+     margin-bottom: 30px;
+     padding-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+     font-weight: 300;
+     line-height: 1.4em;
+     margin: 0px;
+}
+
+img {
+     margin-top: 8px;
+     width: 100%;
+}
+
+/******************************************
+/* NAVIGATION                
+/*******************************************/
+
+header nav {
+     display: block;
+     margin: 10px 0px 20px 0px;
+}
+
+     header nav a {
+          background-color: black;
+          color: white;
+          display: inline-block;
+          font-size: 18px;
+          margin-right: .5px;
+          padding: 10px;
+          text-align: center;
+          width: 16.3%;
+     }
+
+     header nav a:hover {
+          color: rgb(243, 29, 29);
+     }
+
+footer nav a {
+     font-size: 16px;
+     margin-right: 5px;
+     padding-left: 5px;
+}
+
+/******************************************
+/* TEXT STYLES                 
+/*******************************************/
+
+a:hover {
+     color: black;
+}
+
+article p:first-letter {
+     color: rgb(222, 222, 222);
+     float: left;
+     font-size: 70px;
+     line-height: 60px;
+     padding-right: 10px;
+     padding-top: 0px;
+}
+
+footer>small {
+     color: rgb(222, 222, 222);
+     display: block;
+     font-size: 14px;
+     margin-top: 20px;
+}
+
+h1 {
+     display: inline;
+}
+
+     h1>a {
+          font-size: 40px;
+          margin-right: 30px;
+     }
+
+     h1>a:hover {
+          color: rgb(243, 29, 29);
+     }
+
+h2 {
+     font-size: 20px;
+     margin: 12px 0px 10px 0px;
+}
+
+     h2>a {
+          color: black;
+          font-size: 28px;
+     }
+
+     h2>a:hover {
+          color: black;
+     }
+
+     aside h2 {
+          font-weight: 400;
+          color: gray;
+     }
+
+     header>h2 {
+          display: inline;
+     }
+
+h3 {
+     color: rgb(222, 222, 222);
+     font-size: 26px;
+}
+
+h4>a {
+     display: block;
+     font-weight: 700;
+     text-align: right;
+}
+
+
+
+
+
+

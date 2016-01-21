@@ -1,0 +1,411 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     clear: both;
+     content: ".";
+     display: block;
+     height: 0;
+     line-height: 0;
+     visibility: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/*****************************************
+/* BASE STYLES                   
+/*******************************************/
+
+html {
+     font-size: 16px;
+}
+
+body {
+     color: #000;
+     font-family: 'Source Sans Pro', sans-serif;
+     line-height: 1;
+}
+
+
+/******************************************
+/* LAYOUT                 
+/*******************************************/
+
+/* Center the container */
+/*.container {
+     margin: auto;
+	width: 960px;
+}*/
+
+header {
+     background-color: black;
+     border-bottom: 5px solid yellow;
+     padding: 20px;
+}
+
+.mainTop {
+     background: url('../img/coworking.jpg');
+     background-position: 0 center;
+     background-size: cover;
+     height: auto;
+}
+
+     .mainPages {
+          background: rgb(204, 204, 204);
+     }
+
+
+.mainBottom {
+     padding: 20px 20px 30px 20px;
+     display: inline-block;
+}
+
+footer {
+     background-color: black;
+     padding: 30px;
+}
+
+/******************************************
+/*  GLOBAL STYLES                  
+/*******************************************/
+
+.button {
+
+     font-family: 'Oswald', sans-serif;
+     text-decoration: none;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-weight: bold;
+     background: rgb(198, 198, 198);
+     color: black;
+     display: block;
+     text-align: center;
+     padding: 12px;
+     box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+     border-radius: 5px;
+     max-width: 400px;
+     margin: 0 auto;
+
+}
+
+.innerBox {
+     height: 280px;
+     width: 280px;
+     background: rgb(204, 204, 204);
+     margin-bottom: 10px;
+}
+
+.outerBox {
+     padding: 10px;
+     background: white;
+     width: 300px;
+     margin: 10px;
+     display: inline-block;
+
+}
+
+.profileName {
+     font-family: 'Source Sans Pro';
+     font-size: 1.4rem;
+     margin-bottom: 10px;
+     display: block;
+}
+
+.tagPagesWrapper {
+     display: inline-block;
+     text-align: center;
+}
+
+     .tagPages {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 1rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          background: rgb(102, 102, 102);
+          color: white;
+          display: block;
+          text-align: center;
+          border-radius: 20px;
+          padding: 5px 10px;
+          float: left;
+          margin: 0 5px 20px 0;
+     }
+
+/******************************************
+/*  NAVIGATION                  
+/*******************************************/
+
+nav {
+     text-align: right;
+     margin: 0;
+     width: 60%;
+     display: inline-block;
+}
+
+.linkDevelopers, .linkDesigners {
+     font-family: 'Oswald';
+     text-transform: uppercase;
+}
+
+ul {
+     margin: 0;
+     padding: 0;
+}
+     ul li {
+          display: inline-block;
+     }
+
+li>a {
+     text-decoration: none;
+     color: white;
+     display: inline-block;
+     font-family: 'Source Sans Pro';
+     font-size: 1.3rem;
+     padding: 10px;
+}
+
+     li>a:hover {
+          background: rgb(102, 102, 102);
+     }
+
+ .mobileNav {
+    display: none;
+    width: 30px;
+    height: 20px;
+    margin-top: 5px;
+    float: right;
+ }
+
+      .mobileNav div {
+         border: 1px solid white;
+         margin-bottom: 5px;
+         color: yellow;
+         border-radius: 1px;
+      }
+/******************************************
+/*  TEXT STYLES                  
+/*******************************************/
+
+a {
+     font-size: 1.2rem;
+}
+
+p {
+     line-height: 1.6;
+     margin-top: 10px;
+     font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+     font-family: 'Merriweather';
+     font-weight: 700;
+     margin: 0 0;
+}
+
+h1 {
+     width: 39%;
+     margin: 0;
+     display: inline-block;
+}
+
+     h1 a {
+          color: yellow;
+          font-size: 2.2rem;
+          text-decoration: none;
+     }
+
+h2 {
+     font-size: 1.8rem;
+     font-style: italic;
+     text-align: center;
+     padding: 30px;
+}
+
+h3 {
+     font-size: 2rem;
+}
+
+small {
+     color: white;
+     font-size: 1.2rem;
+     line-height: 1.4rem;
+}
+
+/******************************************
+/*  ADDITIONAL STYLES                  
+/*******************************************/
+
+.actionBlock {
+     width: 33.33%;
+     float: left;
+     padding: 20px;
+     text-align: center;
+}
+
+     .actionBlock:nth-child(-n+2) {
+          border-right: 1px solid rgb(229, 229, 229);
+     }
+
+.intro {
+     background-color: rgba(255, 255, 255, 0.8);
+     float: right;
+     padding: 2.2em;
+     max-width: 550px;
+     margin: 4em 6em;
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+     border: 1px solid gray;
+}
+
+span:first-child {
+     color: rgb(152, 152, 152);
+     text-decoration: line-through;
+}
+
+span:last-child {
+     border-bottom: 3px solid yellow;
+}
+
+.tagline {
+     background: gray;
+}
+
+.yellow {
+     background: yellow;
+}
+
+.Designer {
+     text-transform: none;
+}
+
+.boxesWrapper {
+     display: inline-block;
+     text-align: center;
+     margin: 0 auto;
+     padding: 2.3rem;
+
+
+}
+
+/******************************************
+/*  RESPONSIVE LAYOUT               
+/*******************************************/
+
+/* MOBILE */
+
+@media only screen
+     and (min-width: 320px)
+     and (max-width: 1023px) {
+
+          html {
+               font-size: 11px
+          }
+
+          h1 {
+               width: 80%;
+          }
+
+          nav {
+               display: none;
+               width: 100%;
+          }
+
+          .actionBlock {
+               width: 100%;
+               text-align: center;
+          }
+          
+               .actionBlock:nth-child(-n+2) {
+               border-right: none;
+               border-bottom: 3px solid black;
+               margin-bottom: 10px;
+               }
+
+          .button {
+               width: 60%;
+               margin: 10px auto;
+          }
+
+               .button .yellow {
+                    width: 80%;
+               }
+
+          .intro {
+               width: 90%;
+               margin: 2em;
+               float: right;
+          }
+
+          li {
+               width: 100%;
+               display: inline-block;
+               text-align: right;
+          }
+
+               li > a {
+                    font-size: 1.4em;
+                    border-bottom: 1px solid gray;
+                    width: 40%;
+               }
+
+          .mobileNav {
+               display: block;
+          }
+
+          .tagline {
+               display: none;
+          }
+     }
+
+
+/* TABLET */
+
+@media only screen
+     and (min-width: 1024px)
+     and (max-width: 1279px) {
+
+          html {
+               font-size: 14px;
+          }
+
+          h1 {
+               width: 39%;
+          }
+
+          .intro {
+               float: right;
+               margin: 3em;
+          }
+     }
+
+
+
+    
